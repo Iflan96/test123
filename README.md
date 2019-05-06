@@ -1,4 +1,4 @@
-# Imgur Image Uploader REST API
+# iImgur Image Uploader REST API
 
 To start this service, execute the below command:
 
