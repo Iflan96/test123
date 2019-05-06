@@ -1,6 +1,6 @@
 FROM alpine/git as clone 
 WORKDIR /app
-RUN git clone https://gitlab.com/ashutoshRai/imgur-image-uploader.git
+RUN git clone https://github.com/Iflan96/test123.git
 
 FROM maven:3.6-jdk-8-alpine as build
 WORKDIR /app
