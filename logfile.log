@@ -1,0 +1,62 @@
+2019-05-06 10:40:19.210  INFO 25590 --- [main] com.akr.imgur.StarterClass               : Starting StarterClass on puppet-agent with PID 25590 (/root/ImgurUploader/target/classes started by root in /root/ImgurUploader)
+2019-05-06 10:40:19.231  INFO 25590 --- [main] com.akr.imgur.StarterClass               : No active profile set, falling back to default profiles: default
+2019-05-06 10:40:19.454  INFO 25590 --- [main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@53da5971: startup date [Mon May 06 10:40:19 GMT 2019]; root of context hierarchy
+2019-05-06 10:40:23.802  INFO 25590 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8080 (http)
+2019-05-06 10:40:23.826  INFO 25590 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-05-06 10:40:23.835  INFO 25590 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.15
+2019-05-06 10:40:24.240  INFO 25590 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-05-06 10:40:24.241  INFO 25590 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 4809 ms
+2019-05-06 10:40:24.601  INFO 25590 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2019-05-06 10:40:24.610  INFO 25590 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2019-05-06 10:40:24.617  INFO 25590 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2019-05-06 10:40:24.618  INFO 25590 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2019-05-06 10:40:24.620  INFO 25590 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2019-05-06 10:40:24.779  INFO 25590 --- [main] c.a.i.service.UrlUploadRequestService    : Starting the executor service for link download and upload to imgur with 4 threads ...
+2019-05-06 10:40:24.878  INFO 25590 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 
+2019-05-06 10:40:24.900  INFO 25590 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService  'taskExecutor'
+2019-05-06 10:40:25.519  INFO 25590 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@53da5971: startup date [Mon May 06 10:40:19 GMT 2019]; root of context hierarchy
+2019-05-06 10:40:25.722  INFO 25590 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/v1/images/upload],methods=[POST],consumes=[application/json],produces=[application/json]}" onto public org.springframework.http.ResponseEntity<com.akr.imgur.domain.JobIdObject> com.akr.imgur.controller.JobController.uploadJob(com.akr.imgur.domain.UrlObject)
+2019-05-06 10:40:25.724  INFO 25590 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/v1/images],methods=[GET],produces=[application/json]}" onto public org.springframework.http.ResponseEntity<com.akr.imgur.domain.UrlObject> com.akr.imgur.controller.JobController.findAllJobs()
+2019-05-06 10:40:25.725  INFO 25590 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/v1/images/upload/{jobId}],methods=[GET],produces=[application/json]}" onto public org.springframework.http.ResponseEntity<com.akr.imgur.domain.JobStatusObject> com.akr.imgur.controller.JobController.findByJobId(java.lang.Long)
+2019-05-06 10:40:25.735  INFO 25590 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2019-05-06 10:40:25.737  INFO 25590 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2019-05-06 10:40:25.810  INFO 25590 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-05-06 10:40:25.817  INFO 25590 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-05-06 10:40:25.906  INFO 25590 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-05-06 10:40:26.229  INFO 25590 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2019-05-06 10:40:26.383  INFO 25590 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8080 (http)
+2019-05-06 10:40:26.395  INFO 25590 --- [main] com.akr.imgur.StarterClass               : Started StarterClass in 8.519 seconds (JVM running for 25.571)
+2019-05-06 10:40:42.064  INFO 25590 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2019-05-06 10:40:42.065  INFO 25590 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2019-05-06 10:40:42.096  INFO 25590 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 30 ms
+2019-05-06 10:44:32.058  INFO 25887 --- [main] com.akr.imgur.StarterClass               : Starting StarterClass on puppet-agent with PID 25887 (/root/ImgurUploader/target/classes started by root in /root/ImgurUploader)
+2019-05-06 10:44:32.077  INFO 25887 --- [main] com.akr.imgur.StarterClass               : No active profile set, falling back to default profiles: default
+2019-05-06 10:44:32.267  INFO 25887 --- [main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@6283cf33: startup date [Mon May 06 10:44:32 GMT 2019]; root of context hierarchy
+2019-05-06 10:44:35.613  INFO 25887 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8080 (http)
+2019-05-06 10:44:35.654  INFO 25887 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-05-06 10:44:35.661  INFO 25887 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.15
+2019-05-06 10:44:36.016  INFO 25887 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-05-06 10:44:36.017  INFO 25887 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 3766 ms
+2019-05-06 10:44:36.347  INFO 25887 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2019-05-06 10:44:36.351  INFO 25887 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2019-05-06 10:44:36.357  INFO 25887 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2019-05-06 10:44:36.358  INFO 25887 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2019-05-06 10:44:36.360  INFO 25887 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2019-05-06 10:44:36.495  INFO 25887 --- [main] c.a.i.service.UrlUploadRequestService    : Starting the executor service for link download and upload to imgur with 4 threads ...
+2019-05-06 10:44:36.591  INFO 25887 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 
+2019-05-06 10:44:36.610  INFO 25887 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService  'taskExecutor'
+2019-05-06 10:44:37.190  INFO 25887 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@6283cf33: startup date [Mon May 06 10:44:32 GMT 2019]; root of context hierarchy
+2019-05-06 10:44:37.351  INFO 25887 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/v1/images/upload],methods=[POST],consumes=[application/json],produces=[application/json]}" onto public org.springframework.http.ResponseEntity<com.akr.imgur.domain.JobIdObject> com.akr.imgur.controller.JobController.uploadJob(com.akr.imgur.domain.UrlObject)
+2019-05-06 10:44:37.352  INFO 25887 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/v1/images/upload/{jobId}],methods=[GET],produces=[application/json]}" onto public org.springframework.http.ResponseEntity<com.akr.imgur.domain.JobStatusObject> com.akr.imgur.controller.JobController.findByJobId(java.lang.Long)
+2019-05-06 10:44:37.353  INFO 25887 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/v1/images],methods=[GET],produces=[application/json]}" onto public org.springframework.http.ResponseEntity<com.akr.imgur.domain.UrlObject> com.akr.imgur.controller.JobController.findAllJobs()
+2019-05-06 10:44:37.362  INFO 25887 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2019-05-06 10:44:37.364  INFO 25887 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2019-05-06 10:44:37.442  INFO 25887 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-05-06 10:44:37.447  INFO 25887 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-05-06 10:44:37.533  INFO 25887 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-05-06 10:44:37.841  INFO 25887 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2019-05-06 10:44:37.973  INFO 25887 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8080 (http)
+2019-05-06 10:44:37.987  INFO 25887 --- [main] com.akr.imgur.StarterClass               : Started StarterClass in 6.951 seconds (JVM running for 17.203)
+2019-05-06 10:44:56.346  INFO 25887 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2019-05-06 10:44:56.346  INFO 25887 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2019-05-06 10:44:56.410  INFO 25887 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 64 ms
