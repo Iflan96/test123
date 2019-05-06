@@ -4,7 +4,7 @@ RUN git clone https://github.com/Iflan96/test123.git
 
 FROM maven:3.6-jdk-8-alpine as build
 WORKDIR /app
-COPY --from=clone /app/imgur-image-uploader /app
+COPY --from=clone /app/test123 /app
 RUN mvn install
 
 FROM openjdk:8-jdk-alpine
